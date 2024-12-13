@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/error404.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container_header">
+      <div class="img">
+        <img src="img/Logo.png" alt="logo">
+      </div>
+      <ul class="points">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#news">Статьи</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <div class="email">
+        <a class="span1" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+        <a class="span2" href="tel:8(800)550-81-79">8 (800) 550-81-79</a>
+      </div>
+      <div class="buttn">
+        <button class="header_button" id="bt" aria-expanded="false" aria-controls="list" onclick="myFunction1()">
+          КАТАЛОГ
+        </button>
+
+        <ul class="menu" id="list" aria-hidden="true">
+          <li class="menu-item" id="through_rooms">
+            <a href="#" class="menu-link" tabindex="-1">Межкомнатные двери</a>
+          </li>
+          <li class="menu-item" id="home_items">
+            <a href="#" class="menu-link" tabindex="-1">Мебель</a>
+          </li>
+          <li class="menu-item" id="wall_panels">
+            <a href="#" class="menu-link" tabindex="-1">Стеновые панели «Буазери»</a>
+          </li>
+          <li class="menu-item" id="ledders">
+            <a href="#" class="menu-link" tabindex="-1">Лестницы</a>
+          </li>
+          <li class="menu-item" id="home_items_complex">
+            <a href="#" class="menu-link" tabindex="-1">Мебельные фасады</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger_menu_and_contacts_area">
+        <div class="contacts">
+          <a href="#contact">&#9742;</a>
+        </div>
+        <div class="burger_menu" onclick="myFunction2()" id="burger">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="header_plus" id="plus">
+      <ul class="points">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="email">
+        <a class="span2" href="tel:8(800)550-81-79">8 (800) 550-81-79</a>
+        <a class="span1" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+      </div>
+    </div>
+  </header>
+  <section class="error_card">
+    <div class="block404">
+      <p class="error">404</p>
+      <p class="error_message">Упс! Страница не найдена.</p>
+      <button class="button_error" onclick="document.location = 'index.html'">Вернуться на главную страницу</button>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+@import "../styles/_style.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'GilroyRegular';
+    src: url(../fonts/gilroy-regular.ttf);
+}
+@font-face{
+    font-family: 'Abel';
+    src: url(../fonts/abel-rus-by-daymarius.ttf);
+}
+@font-face{
+    font-family: 'GilroyBold';
+    src: url(../fonts/gilroy-bold.ttf);
+}
+body {
+    background-color: #F8E8DC;
+}
+header {
+        .header_plus{
+            display: none;
+        }
+        background-color: #3B3937;
+        padding: 28px 0 28px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container_header{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            .img {
+                margin-right: 134px;
+                img{ 
+                    width: 106px;
+                }
+                
+            }
+            .points {
+                list-style-type: none;
+                display: flex;
+                padding: 0px;
+                font-family: 'GilroyRegular';
+                font-size: 16px;
+                margin-right: 104px;
+                li:not(:last-of-type){
+                    margin-right: 36px;
+                }
+                a {
+                    line-height: 19.2px;
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            }
+            .points li a:hover{
+                color: #FFD6A8;
+            }
+            .email {
+                color: #FFD6A8;
+                display: flex;
+                margin-right: 74px;
+                .span1 {
+                    color: #FFD6A8;
+                    text-decoration: none;
+                    font-family: 'GilroyRegular';
+                    margin-right: 69px;
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    align-self: center;
+                }
+                .span2 {
+                    color: #FFD6A8;
+                    text-decoration: none;
+                    padding-top: 4.8px;
+                    font-family: 'Abel';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    vertical-align: bottom;
+                }
+            }
+            .email .span1:hover, .span2:hover {
+                color: #fff;
+            }
+            .buttn{
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+            .header_button {
+                position: relative;
+                padding: 12px 28px;
+                
+                background-color: #A9845C;
+                color: #FFF;
+                border: none;
+                font-family: 'GilroyRegular';
+                font-size: 13px;
+                font-weight: 700;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+                letter-spacing: 1.1px;
+                line-height: 18.2px;
+                text-align: center;
+                cursor: pointer;
+                transition: padding 0.4s, margin-right 0.4s;
+            }
+            .menu {
+                list-style: none;
+                position: absolute;
+                display: grid;
+                width: 150%;
+                border-radius: 15px;
+                z-index: 3;
+                box-shadow: 0 0 10px #574430;
+                top: 120%;
+                left: -25%;
+                background-color: #8b6d4b;
+                overflow: hidden;
+                line-height: 0;
+                font-family: 'GilroyRegular';
+                color: transparent;
+                font-size: 0;
+                transition: font-size 0.4s, line-height 0.4s;
+                a{
+                    text-decoration: none;
+                    color: #FFD6A8;
+                }
+               
+            }
+            .burger_menu_and_contacts_area{
+                display: none;
+            }
+            .menu-item{
+                overflow: hidden;
+                transition: border 0.2s;
+            } 
+            .menu-link {
+                display: block;
+                padding: 0.5lh;
+                transition: padding 0.4s;
+            }
+            .anim2{
+                font-size: 18px;
+                line-height: 17px;
+                color: currentColor;
+            }
+            .anim3{
+                border-bottom: 0.1px solid lightgray;
+            }
+        }
+    }
+    .error_card {
+    padding-top: 186*$num;
+    .block404 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .error {
+            font-size: 128*$num;
+            letter-spacing: -1px;
+            color: #3B3937;
+            font-family: 'Abel';
+        }
+        .error_message {
+            font-size: 24*$num;
+            font-family: 'GilroyBold';
+            color: #3B3937;
+            margin-bottom: 28*$num;
+            letter-spacing: -0.1px;
+
+        }
+        .button_error {
+            background-color: #A9845C;
+            color: #fff;
+            padding: 21*$num;
+            font-family: 'GilroyRegular';
+            border: 0;
+            font-size: 13*$num;
+            font-weight: 700;
+            text-shadow: 1*$num 1*$num 1*$num rgba(0, 0, 0, 0.25);
+            letter-spacing: 0.7875px;
+            line-height: 18.2*$num;
+            text-transform: uppercase;
+        }
+    }
+}
