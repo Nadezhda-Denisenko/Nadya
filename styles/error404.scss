@@ -1,0 +1,61 @@
+@import "../styles/_style.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'GilroyRegular';
+    src: url(../fonts/gilroy-regular.ttf);
+}
+@font-face{
+    font-family: 'Abel';
+    src: url(../fonts/abel-rus-by-daymarius.ttf);
+}
+@font-face{
+    font-family: 'GilroyBold';
+    src: url(../fonts/gilroy-bold.ttf);
+}
+body {
+    background-color: #F8E8DC;
+}
+    .error_card {
+    padding-top: 186*$num;
+    .block404 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .error {
+            font-size: 128*$num;
+            letter-spacing: -1px;
+            color: #3B3937;
+            font-family: 'Abel';
+        }
+        .error_message {
+            font-size: 24*$num;
+            font-family: 'GilroyBold';
+            color: #3B3937;
+            margin-bottom: 28*$num;
+            letter-spacing: -0.1px;
+
+        }
+        .button_error {
+            background-color: #A9845C;
+            color: #fff;
+            padding: 21*$num;
+            font-family: 'GilroyRegular';
+            border: 0;
+            font-size: 13*$num;
+            font-weight: 700;
+            text-shadow: 1*$num 1*$num 1*$num rgba(0, 0, 0, 0.25);
+            letter-spacing: 0.7875px;
+            line-height: 18.2*$num;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .button_error:hover{
+            transform: scale(1.1);
+
+        }
+    }
+}
